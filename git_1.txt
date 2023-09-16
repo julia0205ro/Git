@@ -1,0 +1,51 @@
+ 1. Создать внешний репозиторий c названием Git. - https://github.com/julia0205ro, Repositories, New, Repository name - Git, Description - in order to show my skills in Git, Public, Add a README file, Create repository
+ 2. Клонировать репозиторий Git на локальный компьютер. - https://github.com/julia0205ro/Git, Code, HTTPS, copy, Terminal, git clone "paste copied link" - git clone https://github.com/julia0205ro/Git.git
+ 3. Внутри локального Git создать файл “new.json”. - touch Git/new.json
+ 4. Добавить файл под гит. - cd Git/, git add new.json
+ 5. Закоммитить файл. - git commit -m "add_new.json"
+ 6. Отправить файл на внешний GitHub репозиторий. - git push
+ 7. Отредактировать содержание файла “new.json” - написать информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё написать в формате JSON. - nano new.json
+ 
+Ввести:
+ {       "the favorite movie":"In Brues",
+        "the favorite serial":"don't know",
+        "the favorive food":"pizza",
+        "the favorite season":"spring",
+        "a country that I want to visit":"South Korea"
+}
+Ctrl+O, Enter, Crtl+X
+ 
+ 8. Отправить изменения на внешний репозиторий. - git commit -am "add_new.json", git push
+ 9. Создать файл new_2.json - touch new_2.json
+ 10. В файл new_2.json добавить информацию о себе (ФИО, возраст, количество домашних животных) в формате JSON. - nano new_2.json
+ 
+Ввести:
+{       "name":"Yulia",
+        "age":27,
+        "number of pets":"one cat"
+}
+Ctrl+O, Enter, Crtl+X
+ 
+ 11. Создать файл new_3.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON - nano new_3.json
+
+Ввести:
+{"skills":["SQL", 
+           "Python",
+           "Excel",
+           "Tableau"]
+}
+Ctrl+O, Enter, Crtl+X
+ 
+ 12. Отправить сразу 2 файла на внешний репозиторий. - git add new_2.json new_3.json, git commit -am "add_new/2/3", git push
+ 13. На веб интерфейсе создать файл new_4.json. - https://github.com/julia0205ro/Git, Add file, Create new file, Git/new_4.json in main
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - Commit changes, Commit message - Create new_4.json, Commit directly to the main branch, Commit changes
+ 15. На веб интерфейсе модифицировать файл new_4.json, добавить любую запись в формате JSON. - https://github.com/julia0205ro/Git/tree/main, new_4.json, Edit this file, 
+ 
+Ввести: 
+{ "mama": 29,
+  "dady": 27,
+  "me": 1
+}
+
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - Commit changes, Commit message - update_new_4.json, Commit directly to the main branch, Commit changes
+ 17. Синхронизировать внешний и локальный репозиторий JSON - git pull
